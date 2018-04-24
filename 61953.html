@@ -59,11 +59,11 @@
 поддръжка от браузъра за този елемент. Това се проверява като създадем DOM 
 елемент и проверим дали <b>.content</b> свойството съществува:
 		</pre>
-		<img src="supportsTemplate.png">
+		<img src="images/supportsTemplate.png">
 		<pre>
 Ако браузерът не поддържа <code>&lttemplate&gt</code> елемента, използваме стари техники и 
 библиотеки за справяне с проблема (чиито минуси са описани по-долу).
-		<img src="IE.jpg">
+		<img src="images/IE.jpg">
 		</pre>
 		<h3 id="declaration">2. Деклариране на съдържанието на шаблона</h3>
 		<pre>
@@ -72,7 +72,7 @@ contents” – поделементи, които по същество са б
 За създаването на съдържание на шаблона, просто се декларира някаква структура, 
 която се загражда в <code>&lttemplate&gt</code> елемента:	
 		</pre>
-		<img src="declTemplate.png">
+		<img src="images/declTemplate.png">
 		<pre>
 Може би забелязвате празната картинка. Липсата на съдържание в src би трябвало да 
 „счупи“ img елемента и браузърът да се скара с грешка 404 или грешки в конзолата. 
@@ -99,7 +99,7 @@ contents” – поделементи, които по същество са б
 	     съдържание, което е позволено в съответния елемент. <code>&lttemplate&gt</code> 
 	     елементът може също така да бъде дете на <code>&lttable&gt</code> или <code>&ltselect&gt</code>:
 		</pre>
-		<img src="templatetable.png">
+		<img src="images/templatetable.png">
 		<h3  id="activation">3. Активиране на шаблона</h3>
 		<pre>
      За да се използва един шаблон, той трябва да бъде активиран. В противен 
@@ -109,7 +109,7 @@ contents” – поделементи, които по същество са б
 фрагмент от документа, който съдържа същността на шаблона и може единствено да 
 се чете.
 		</pre>
-		<img src="activateTemplate.png">
+		<img src="images/activateTemplate.png">
 		<pre>
 След запечатването на шаблона, съдържанието му се интерпретира – може да се види 
 в DOM, снимките и видеата се зареждат и прочие. В този пример съдържанието е 
@@ -125,7 +125,7 @@ contents” – поделементи, които по същество са б
 	Единственото време, в което се зарежда шаблонът е когато се активира.
      2.	Трябва да се внимава с вложени шаблони. Например:
 		</pre>
-		<img src="nestedTemplates.png">
+		<img src="images/nestedTemplates.png">
 		<pre>
         Активирането на външния шаблон няма да активира вътрешните шаблони. 
 	Тоест ако имаме влагане на шаблони, задължително трябва всички шаблони 
@@ -140,7 +140,7 @@ HTML е много дълъг. През годините са измислени
      1. Първият метод е използването на [hidden] или display:none, които създават
 	"невидим" DOM.
 		</pre>
-		<img src="hiddenmethod.png">
+		<img src="images/hiddenmethod.png">
 		<pre>
         Въпреки че тази техника върши работа, има няколко недостатъка. Кратък 
 	анализ на техниката:
@@ -153,7 +153,7 @@ HTML е много дълъг. През годините са измислени
 	         същото id
      2.	Вторият метод е манипулиране на string-ове посредством <code>&ltscript&gt</code> тага			 
 		</pre>
-		<img src="scriptmethod.png">
+		<img src="images/scriptmethod.png">
 		<pre>
 	 Анализ на тази техника:
 	      a. + нищо не се интерпретира, защото <code>&ltscript&gt</code> е display:none по 
@@ -168,12 +168,12 @@ HTML е много дълъг. През годините са измислени
      Нека искаме да създадем секция със съдържание, копирано няколко пъти. Единият начин да направим 
 това е просто чрез копиране:
 		</pre>
-		<img width="85%" src="commentsExample.png">
+		<img width="85%" src="images/commentsExample.png">
 		<pre>
      Това обаче е ненужно копиране директно в HTML документа, което може да се спести и да се
 олекоти работата на браузъра посредством използването на шаблони.
 		</pre>
-		<img width="85%" src="commentsExTemplate.png">
+		<img width="85%" src="images/commentsExTemplate.png">
 		<pre>
      В else клаузата може да използваме някой от методите описани в 
 "Други методи за създаване на шаблони".
@@ -182,8 +182,8 @@ HTML е много дълъг. През годините са измислени
 не получим информация за записите в нея, можем да използваме шаблони. (може в JS кода да приемаме
 информацията от база данни в сървърната част на сайта)
 		</pre>
-		<img width="85%" src="tableExampleFirst.png">
-		<img width="85%" src="tableExampleSecond.png">
+		<img width="85%" src="images/tableExampleFirst.png">
+		<img width="85%" src="images/tableExampleSecond.png">
 		<h2 id="sources">Източници</h2>
 		<div class="sourceslinks">
 			<a href="http://www.html5rocks.com/en/tutorials/webcomponents/template/">http://www.html5rocks.com/en/tutorials/webcomponents/template/</a><br>
